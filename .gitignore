@@ -1,4 +1,3 @@
-node_modules
 
 lib-cov
 *.seed
@@ -53,3 +52,5 @@ mongodb-*
 
 error.log
 combined.log
+
+package-lock.json
