@@ -1,9 +1,9 @@
 const express = require('express');
 
-const Photos = require('./photos');
+const Photos = require('../controllers').Photos;
 
 const router = express.Router();
 
-router.use('/', Photos);
+router.get('/photos', Photos.renderPhotos);
 
 module.exports = router;
