@@ -11,4 +11,5 @@ const schema = new Schema(
 );
 schema.index({ url: 1 }, { unique: true, background: true });
 
-module.exports = mongoose.model('Photos', schema);
+const Model = mongoose.model('Photos', schema);
+module.exports = { Model };
