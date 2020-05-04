@@ -21,6 +21,21 @@ div {
   text-align: left;
 }
 
+.center {
+  text-align: center;
+}
+
+.filter {
+  padding: 10px;
+  box-shadow: 0 0 7px #0000004f;
+  border-radius: 10px;
+  margin: 0 0 40px;
+}
+
+.dimensions {
+  padding: 10px;
+}
+
 .parent-wrapper {
   padding: 10px;
   box-sizing: border-box;

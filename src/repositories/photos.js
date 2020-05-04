@@ -1,9 +1,18 @@
-const Photo = require('../models').Photo;
+const Photo = require('../models').Photo.Model;
 
 async function renderPhotos(query) {
   try {
-    const totalCount = await Photo.Model.count({});
-    const result = await Photo.Model.find({}, {}, query).lean().exec();
+    const totalCount = await Photo.count({});
+    const result1 = await Photo.find({}, {}, query).lean().exec();
+
+    let result = result1.map((pic) => {
+      return {
+        ...pic,
+        width: pic.url.split('/')[5],
+        height: pic.url.split('/')[6],
+      };
+    });
+
     let size = query.limit;
     let totalPages = Math.ceil(totalCount / size);
     return { result, totalPages };

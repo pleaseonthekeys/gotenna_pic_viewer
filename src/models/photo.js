@@ -4,6 +4,8 @@ const Schema = mongoose.Schema;
 const schema = new Schema(
   {
     url: { type: String, index: true },
+    width: String,
+    height: String,
   },
   {
     timestamps: true,
