@@ -5,7 +5,7 @@ const parse = require('csv-parse');
 const ndjson = require('ndjson');
 
 const db = require('./src/utils/db');
-const Photo = require('./src/models/photo');
+const Photo = require('./src/models').Photo.Model;
 
 let row = 1;
 const giveTransformStream = (columns, transformData) =>
@@ -23,6 +23,7 @@ const giveTransformStream = (columns, transformData) =>
       },
       async (err, parse) => {
         if (err) {
+          console.error('readfile::giveTransformStream');
         }
         let [parsed] = parse;
 
@@ -38,7 +39,7 @@ const givePrepareBatchStream = () => {
   let batch = [];
   return through2.obj(function (chunkThatisAnObject, enc, callback) {
     batch.push(chunkThatisAnObject);
-    if (batch.length === 50) {
+    if (batch.length === 10) {
       this.push(batch);
       batch = [];
     }
