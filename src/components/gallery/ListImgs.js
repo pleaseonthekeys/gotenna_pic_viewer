@@ -19,13 +19,14 @@ function ListImgs({ photos }) {
   });
 
   return (
-    <>
-      <button onClick={handleGrayScale}>
-        {grayscale ? 'Show Color' : 'Show Black and White'}
-      </button>
-
+    <div>
+      <div className="left">
+        <button onClick={handleGrayScale}>
+          {grayscale ? 'Show Color' : 'Show Black and White'}
+        </button>
+      </div>
       <div className="parent">{list}</div>
-    </>
+    </div>
   );
 }
 
