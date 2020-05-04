@@ -1,10 +1,16 @@
 import React from 'react';
 
-class App extends React.Component {
-  render() {
-    const { name } = this.props;
-    return <h1>Hello {name}</h1>;
-  }
-}
+import GalleryContainer from '../redux/containers/galleryContainers';
+
+const App = () => {
+  return (
+    <div>
+      <header>
+        <h1 className="app-name">GoTenna Photo</h1>
+      </header>
+      <GalleryContainer />
+    </div>
+  );
+};
 
 export default App;
