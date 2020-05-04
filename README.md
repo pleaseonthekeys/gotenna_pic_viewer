@@ -75,6 +75,16 @@ node ./src/utils/transformCsv.js
 | size  |   number of items to display per page    |
 | pageN | which page of pagination to be displayed |
 
+## valid width and height combinations ( to be debugged later)
+
+| width | height |
+| ----- | ------ |
+| 300   | 200    |
+| 250   | 250    |
+| 100   | 100    |
+| 400   | 200    |
+| 300   | 300    |
+
 # Future Improvements
 
 ## frontend
