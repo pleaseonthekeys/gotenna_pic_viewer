@@ -80,6 +80,7 @@ node ./src/utils/transformCsv.js
 ## frontend
 
 - improve pagination component ui
+- change dimension selector to only display possible H X W combinations
 - improve css especially for button, filter, and pagination alignment
 - split renderPhotosController into utility functions
 - after setting filters, you currently need to refresh to clear filters
