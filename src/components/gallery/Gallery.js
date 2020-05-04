@@ -1,10 +1,10 @@
 import React, { Component, useEffect, useState, useRef } from 'react';
 
+import ListImgs from './ListImgs';
+
 function Gallery({ handleGetPhotosRequest, photos = { data: [] } }) {
-  const testing =
-    photos && photos.photos && photos.photos.data[0]
-      ? photos.photos.data[0].url
-      : 'nope';
+  const photoList =
+    photos && photos.photos && photos.photos.data[0] ? photos.photos.data : [];
 
   useEffect(() => {
     handleGetPhotosRequest();
@@ -12,7 +12,7 @@ function Gallery({ handleGetPhotosRequest, photos = { data: [] } }) {
 
   return (
     <div>
-      <img src={testing}></img>
+      <ListImgs photos={photoList} />
     </div>
   );
 }

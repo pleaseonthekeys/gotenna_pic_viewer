@@ -8,7 +8,9 @@ const App = () => {
       <header>
         <h1 className="app-name">GoTenna Photo</h1>
       </header>
-      <GalleryContainer />
+      <div className="parent-wrapper">
+        <GalleryContainer />
+      </div>
     </div>
   );
 };
