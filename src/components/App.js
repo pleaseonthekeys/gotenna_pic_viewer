@@ -6,7 +6,9 @@ const App = () => {
   return (
     <div>
       <header>
-        <h1 className="app-name">GoTenna Photo</h1>
+        <h1 className="app-name">
+          . . . . . . GoTenna Photo Viewer . . . . . .
+        </h1>
       </header>
       <div className="parent-wrapper">
         <GalleryContainer />

@@ -10,6 +10,9 @@ function Filter({
   return (
     <div className="center">
       <div className="filter">
+        <label>
+          <b>Filter by Dimensions</b>
+        </label>
         <form onSubmit={handleSubmitFilter}>
           <label>Width</label> <br></br>
           <select className="dimensions" onChange={handleWidthFilter}>
