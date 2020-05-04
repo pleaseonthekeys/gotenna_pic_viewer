@@ -7,12 +7,11 @@ import {
   fetchPhotosFailure,
 } from '../actions/galleryActions';
 
-export const getPhotos = () => {
+export const getPhotos = (pageNo, size) => {
   return (dispatch) => {
     dispatch(fetchPhotos());
-    console.log('actioncreator');
     return axios
-      .get(`http://localhost:3001/gotenna/photos`)
+      .get(`http://localhost:3001/gotenna/photos?pageNo=${pageNo}&size=${size}`)
       .then(({ data }) => {
         dispatch(fetchPhotosSuccess({ data }));
       })

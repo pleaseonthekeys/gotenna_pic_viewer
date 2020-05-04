@@ -11,7 +11,7 @@ const mapStateToProps = (store) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    handleGetPhotosRequest: () => dispatch(getPhotos()),
+    handleGetPhotosRequest: (pageNo, size) => dispatch(getPhotos(pageNo, size)),
   };
 };
 
