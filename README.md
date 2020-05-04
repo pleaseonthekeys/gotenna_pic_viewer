@@ -1,9 +1,11 @@
 # Installing-Dependencies
 
 > Navigate to the root directory and run the following scripts to run locally
+> see bullet below about setting up MongoDB in the Cloud
 
 - `npm install` - install dependencies
-- `npm start-dev` - start the server in production
+- `npm start` - start the sever in development
+- `npm run build:dev` - build the site in development
 
 ## Technologies-Used
 
