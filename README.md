@@ -3,6 +3,7 @@
 > Navigate to the root directory and run the following scripts to run locally
 > see bullet below about setting up MongoDB in the Cloud
 
+- create a local.js file: config/local.js and paste the code described under the 3rd header with thte password provided in your email.
 - `npm install` - install dependencies
 - `npm start` - start the sever in development
 - `npm run build:dev` - build the site in development
@@ -108,5 +109,5 @@ node ./src/utils/transformCsv.js
 
 ## testing
 
-- add local unit and integration testing with artillery
-- add load testing with loader.io
+- add local unit and integration testing with jest/enzyme and mocha/chai
+- add load testing with artillery and loader.io
