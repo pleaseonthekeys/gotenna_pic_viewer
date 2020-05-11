@@ -5,8 +5,8 @@
 
 - create a local.js file: config/local.js and paste the code described under the 3rd header with thte password provided in your email.
 - `npm install` - install dependencies
+- `npm run build:dev` - this is necessary in order to build the site in development (bundle.js file)
 - `npm start` - start the sever in development
-- `npm run build:dev` - build the site in development
 
 ## Technologies-Used
 
